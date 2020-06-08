@@ -1,0 +1,210 @@
+* {
+    font-family: Microsoft JhengHei;
+}
+.body {
+    background-color: rgb(245, 245, 245);
+}
+
+.header {
+    background-color: #424242;
+}
+.info-title {
+    color: #ffd366;
+}
+.input-box input {
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ffd366;
+    background-color: rgba(255, 255, 255, 0.18);
+    text-indent: 10px;
+    color: white;
+    font-size: 24px;
+}
+.input-box input::-webkit-input-placeholder {
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.circle-btn {
+    width: 120px;
+    height: 120px;
+    background-color: #ffd366;
+    font-size: 24px;
+    color: #424242;
+}
+
+.circle-btn h5 {
+    color: #424242;
+}
+
+.circle-btn:hover {
+    box-shadow: 0 1px 6px 3px rgb(255, 196, 50, 0.64);
+}
+
+.circle-btn:active {
+    background-color: #dea821;
+}
+
+/*list  style */
+#stand {
+    border: 6px solid #86d73f;
+    color: #86d73f;
+    width: 123px;
+    height: 123px;
+    border: 50%;
+    position: relative;
+}
+.standBorder {
+    border-left: 7px solid #86d73f;
+}
+#standReset {
+    background-color: #86d73f;
+}
+
+#underweight {
+    border: 6px solid #31baf9;
+    color: #31baf9;
+    width: 123px;
+    height: 123px;
+    border: 50%;
+    position: relative;
+}
+.underWBorder {
+    border-left: 7px solid #31baf9;
+}
+
+#underweightRe {
+    background-color: #31baf9;
+}
+
+#overweight {
+    border: 6px solid #ff982d;
+    color: #ff982d;
+    width: 123px;
+    height: 123px;
+    border: 50%;
+    position: relative;
+}
+.overWBorder {
+    border-left: 7px solid #ff982d;
+}
+
+#overweightRe {
+    background-color: #ff982d;
+}
+
+#mildObesity {
+    border: 6px solid #ff6c03;
+    color: #ff6c03;
+    width: 123px;
+    height: 123px;
+    border: 50%;
+    position: relative;
+}
+.mildObesityBorder {
+    border-left: 7px solid #ff6c03;
+}
+
+#mildObesityRe {
+    background-color: #ff6c03;
+}
+
+#moderateObesity {
+    border: 6px solid #dd4a1d;
+    color: #dd4a1d;
+    width: 123px;
+    height: 123px;
+    border: 50%;
+    position: relative;
+}
+.moderateObesityBorder {
+    border-left: 7px solid #dd4a1d;
+}
+
+#moderateObesityRe {
+    background-color: #dd4a1d;
+}
+
+#severeObesity {
+    border: 6px solid #ff1200;
+    color: #ff1200;
+    width: 123px;
+    height: 123px;
+    border: 50%;
+    position: relative;
+}
+.severeObesityBorder {
+    border-left: 7px solid #ff1200;
+}
+
+#severeObesityRe {
+    background-color: #ff1200;
+}
+
+#differentBtn {
+    width: 123px;
+    height: 123px;
+    border: 50%;
+    background-color: #424242;
+    position: relative;
+}
+
+.bmiResult {
+    font-size: 32px;
+    text-align: center;
+}
+
+.smallBMI {
+    font-size: 14px;
+    text-align: center;
+}
+
+.resetBtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #424242;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.main {
+    min-height: calc(100vh - (296px + 87px));
+}
+.recordBox {
+    background-color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.record-title {
+    color: #4a4a4a;
+    font-weight: 400;
+    padding: 30px;
+}
+
+.borderLeft {
+    border-left: 7px solid;
+}
+
+.close{
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.deleteAllBtn:hover{
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #ffd366;
+}
+
+

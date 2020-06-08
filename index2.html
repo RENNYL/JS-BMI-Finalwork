@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dc9180e397.js" crossorigin="anonymous"></script>
+    <title>BMI 計算機</title>
+</head>
+
+<body class="body">
+    <div class="header row m-0 justify-content-center align-items-center p-5">
+        <div>
+            <img src="image/BMICLogo.png" class="px-5">
+        </div>
+        <div class="input-box px-5 py-3">
+            <label class="info-title font-weight-light" for="height">身高(cm)</label>
+            <br>
+            <input type="text" placeholder="請輸入身高" class="heightClass" id="height">
+            <br>
+            <label class="info-title font-weight-light mt-4" for="weight">體重(kg)</label>
+            <br>
+            <input type="text" placeholder="請輸入體重" class="weightClass" id="weight">
+        </div>
+        <div class="resultClass circle-style px-md-3">
+            <div class=" resultBtn circle-btn rounded-circle d-flex d-none justify-content-center align-items-center "
+                type="button">看結果</div>
+            <div class="justify-content-center rounded-circle d-none flex-column differentBtn" id="differentBtn">
+                <p class="bmiResult mb-0"></p>
+                <p class="smallBMI mb-0">BMI</p>
+                <div class="resetBtn d-flex justify-content-center align-items-center">
+                    <img src="image/icons_loop.png">
+                </div>
+            </div>
+        </div>
+        <div class="right-status h3 px-3" >
+            
+        </div>
+    </div>
+<!-- main -->
+    <div class="main">
+        <h3 class="record-title text-center">BMI紀錄</h3>
+        
+<div class="deleteAll">
+    <h5 class=" d-flex justify-content-end pr-3">
+        <a href="#" class="deleteAllBtn font-weight-light">
+            <i class="fas fa-trash pr-2"></i>刪除全部
+        </a>
+    </h5>
+</div>
+        <ul class="list d-flex flex-column-reverse align-items-center"></ul>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer p-3 d-flex justify-content-center">
+        <img src="image/BMICLogo-1.png">
+    </div>
+
+    <script src="all2.js"></script>
+</body>
+
+</html>
