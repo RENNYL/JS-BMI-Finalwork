@@ -11,7 +11,7 @@ let data = JSON.parse(localStorage.getItem('data')) || [];//輸入的身高體�
 countBtn.addEventListener('click', countBMI);
 updateList(data);
 
-function countBMI(e) {
+function countBMI() {
     let heightNum = parseInt(document.querySelector('.heightClass').value);
     let weightNum = parseInt(document.querySelector('.weightClass').value);
     let BMIvalue = (weightNum / ((heightNum / 100) * (heightNum / 100))).toFixed(2); //.toFixed(2)小數點第2位
@@ -19,8 +19,12 @@ function countBMI(e) {
     const record = {};
 
     if (heightNum <= 0 || isNaN(heightNum) || weightNum <= 0 || isNaN(weightNum)) {
-        alert('請輸入正確數字');
+        document.querySelector('.heightEmpty').classList.remove('d-none');
+        document.querySelector('.weightEmpty').classList.remove('d-none');
         return;
+    }else{
+        document.querySelector('.heightEmpty').classList.add('d-none');
+        document.querySelector('.weightEmpty').classList.add('d-none');
     }
     record.height = heightNum;
     record.weight = weightNum;
